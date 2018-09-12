@@ -1,0 +1,32 @@
+ ---
+title: "CasinoCluster"
+author: "Shameka Brayton"
+date: "9/11/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+pacman::p_load(readr, tidyr, broom)
+
+
+```
+
+
+
+- Here we will get the data. I am using a file with player data from a casino on how much each player has spent on particular games
+```{r data, echo=FALSE, include=FALSE}
+CasinoData <- read_csv("CasinoData.csv")
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
